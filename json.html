@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Owl Carousel - Dynamic content via JSON</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Owl Carousel Assets -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+  <body>
+
+   
+   
+ 
+
+      <div id="demo">
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+
+              <div id="owl-demo" class="owl-carousel">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+    
+	</div>
+    <script src="js/jquery-1.9.1.min.js"></script> 
+    <script src="js/owl.carousel.js"></script>
+
+
+    <!-- Demo -->
+
+    <style>
+    #owl-demo .item{
+        background: #a1def8;
+        padding: 30px 0px;
+        display: block;
+        margin: 5px;
+        color: #FFF;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+    }
+    </style>
+
+
+    <script>
+    $(document).ready(function() {
+
+      $("#owl-demo").owlCarousel({
+        jsonPath : "json/data.json"
+      });
+
+    });
+    </script>
+
+
+  </body>
+</html>
